@@ -19,6 +19,10 @@
 *.dylib
 *.dll
 
+#Content
+Content/StarterContent
+Content/
+
 # Fortran module files
 *.mod
 
