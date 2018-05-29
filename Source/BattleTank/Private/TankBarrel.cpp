@@ -3,7 +3,7 @@
 #include "BattleTank.h"
 #include "TankBarrel.h"
 
-void UTankBarrel::Elevate(float DegreesPreSecond)
+void UTankBarrel::Elevate(float RelativeSpeed)
 {
 	// Move the right amount this frame 
 
