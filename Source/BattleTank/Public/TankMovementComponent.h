@@ -17,16 +17,16 @@ class BATTLETANK_API UTankMovementComponent : public UNavMovementComponent
 
 public:
 	UFUNCTION(BlueprintCallable, Category = "Setup")
-		void IntendMoveForward(float Throw);
+	void IntendMoveForward(float Throw);
 
 	UFUNCTION(BlueprintCallable, Category = "Input")
-		void Initialize(UTankTrack* LeftTrackToSet, UTankTrack* RightTrackToSet);
+	void Initialize(UTankTrack* LeftTrackToSet, UTankTrack* RightTrackToSet);
 
 	UFUNCTION(BlueprintCallable, Category = "Input")
-		void IntendTurnRight(float Throw);
+	void IntendTurnRight(float Throw);
 
 	UFUNCTION(BlueprintCallable, Category = "Input")
-		void IntendTurnLeft(float Throw);
+	void IntendTurnLeft(float Throw);
 
 private:
 	// Called from the pathfinding logic by the AI controllers
