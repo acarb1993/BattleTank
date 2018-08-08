@@ -24,7 +24,7 @@ void ATankPlayerController::AimTowardsCrosshair()
 	if (!GetPawn()) { return; } // Example: If not possessing
 
 	auto AimingComponent = GetPawn()->FindComponentByClass<UTankAimingComponent>();
-	if (!ensure(AimingComponent)) { return; }
+	if ( !ensure(AimingComponent)) { return; }
 
 	FVector HitLocation; // Out parameter
 	if (GetSightRayHitLocation(HitLocation) ) // Has "side-effect", is going to line trace
