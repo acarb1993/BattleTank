@@ -30,6 +30,8 @@ protected:
 	void FoundAimingComponent(UTankAimingComponent* AimCompRef);
 
 private:
+	virtual void SetPawn(APawn* InPawn) override;
+
 	// Return an OUT parameter, true if hit landscape
 	bool GetSightRayHitLocation(FVector& OutHitLocation) const;
 
@@ -44,4 +46,7 @@ private:
 
 	bool GetLookDirection(FVector2D& ScreenLocation, FVector& LookDirection) const;
 	bool GetLookVectorHitLocation(FVector& LookDirection, FVector& HitLocation) const;
+
+	UFUNCTION()
+	void OnPossessedTankDeath();
 };
